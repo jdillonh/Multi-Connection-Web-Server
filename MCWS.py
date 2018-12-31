@@ -5,6 +5,7 @@ import datetime
 import select
 
 def parseRequest(req):
+	""" Parses an HTTP request and returns the headers as seperate strings. """
 	reqHeaders = {}
 	reqLine = ''
 	lineNum = 0
