@@ -45,10 +45,7 @@ socketQ = []
 packetQ = []
 
 
-#moved out of loop, we don't want to add this multiple times
-#acceptSock.setblocking(0)
 openConns.append(acceptSock) 
-
 
 while 1:
 	rlist, wlist, xlist = select.select(openConns, openConns, openConns, TIMEOUT)
